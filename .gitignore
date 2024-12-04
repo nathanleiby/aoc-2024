@@ -1,3 +1,7 @@
 # ignore compile binary
 main
 
+
+# Advent of Code requests to not upload generated puzzle inputs
+input.txt
+
