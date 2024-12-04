@@ -1,8 +1,4 @@
-import std/enumerate
-import std/strutils
-import std/sequtils
 from std/strformat import fmt
-import std/options
 
 proc readInput(p: string): seq[string] =
     let f = open(p)
@@ -10,7 +6,6 @@ proc readInput(p: string): seq[string] =
 
     var rows: seq[string]
     for line in f.lines():
-        # let chars = line.split("")
         rows.add(line)
 
     return rows
@@ -31,8 +26,6 @@ proc part1(p: string) =
 
     # read input into a 2d grid
     let reports = readInput(p)
-
-    # echo reports
     let dim = reports.len()
 
     # for each position in grid
